@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Aguacate.com.ve</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="index.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>Aguacate.com.ve</title>
 </head>
-<body class="text-[14px] bg-white">
-    <header class="flex w-full h-[50px] justify-between">
-        <nav class="flex">
-            <h3 class="font-medium">
-                e-Aguacate
-            </h3>
-        </nav>
-        <nav class="flex gap-[10px]">
-            <p class="bg-slate-400 rounded-full hover:bg-slate-300 active:bg-slate-500">Inicio</p>
-            <p class="bg-slate-400 rounded-full hover:bg-slate-300 active:bg-slate-500">Categorías</p>
-            <p class="bg-slate-400 rounded-full hover:bg-slate-300 active:bg-slate-500">Servicios</p>
-            <p class="bg-slate-400 rounded-full hover:bg-slate-300 active:bg-slate-500">App</p>
-        </nav>
-        <nav class="flex">
-
-        </nav>
-    </header>
+<body class="text-[15px] bg-white w-screen">
+	<header class="flex w-full h-[50px] justify-between items-center box-border fixed px-[7%] md:px-[10%] lg:px-[15%] pt-[25px]">
+		<nav class="flex">
+			<h3 class="font-medium">
+				e-Aguacate
+			</h3>
+		</nav>
+		<nav class="flex gap-[10px] justify-center">
+			<p class="hidden md:flex justify-center items-center h-[30px] w-[4em] rounded-full cursor-pointer hover:bg-slate-300 active:bg-slate-500">
+				Inicio
+			</p>
+			<p class="hidden md:flex justify-center items-center h-[30px] w-[6em] rounded-full cursor-pointer hover:bg-slate-300 active:bg-slate-500">
+				Categorías
+			</p>
+			<p class="hidden md:flex justify-center items-center h-[30px] w-[5em] rounded-full cursor-pointer hover:bg-slate-300 active:bg-slate-500">
+				Servicios
+			</p>
+			<p class="hidden md:flex justify-center items-center h-[30px] w-[4em] rounded-full cursor-pointer hover:bg-slate-300 active:bg-slate-500">
+				App
+			</p>
+			<img class="md:hidden flex w-[20px] h-[20px]" src="./Imagenes/bars-solid.svg" alt="">
+		</nav>
+		<nav class="flex gap-[7px]">
+			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[6em] gap-[5px] text-[#ad465b] bg-[#ad465b7d] hover:outline-black hover:outline-[1.5px] hover:outline active:bg-[#622733] rounded-full">
+				<p class="hidden md:block">Carrito</p> 
+				<img class="Carrito w-[20px] h-[20px]" src="./Imagenes/cart-shopping-solid.svg" alt="">
+			</button>
+			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[7em] gap-[5px] text-[#489848] bg-[#48984883] hover:outline-black hover:outline-[1.5px] hover:outline active:bg-[#244c24] rounded-full">
+				<p class="hidden md:block">Mensajes</p> 
+				<img class="Mensaje w-[20px] h-[20px]" src="./Imagenes/inbox-solid.svg" alt="">
+			</button>
+			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[9em] gap-[5px] rounded-full hover:outline-black hover:outline-[1.5px] hover:outline active:">
+				<p class="hidden md:block">Iniciar Sesión</p> 
+				<img class="Sesion w-[20px] h-[20px]" src="./Imagenes/arrow-right-to-bracket-solid.svg" alt="">
+			</button>
+		</nav>
+	</header>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+	AOS.init();
 </script>
 </html>
