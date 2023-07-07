@@ -5,17 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Aguacate.com.ve</title>
 </head>
-<body class="text-[15px] bg-white w-screen">
-	<header class="flex w-full h-[50px] justify-between items-center box-border fixed px-[7%] md:px-[10%] lg:px-[15%] pt-[25px]">
-		<nav class="flex">
-			<h3 class="font-medium">
-				e-Aguacate
+<body class="text-[16px] bg-white w-screen bg-[url('./Imagenes/PNG/background-1.png')] bg-cover">
+	<header class="flex w-full h-[50px] justify-between items-center box-border px-[5%] md:px-[8%] lg:px-[10%] pt-[25px]">
+		<nav class="flex gap-[5px]">
+			<img class="w-[28px] h-[28px]" src="./Imagenes/JPG/m3h0_xmlf_221123.jpg" alt="">
+			<h3 class="font-bold text-xl">
+				eAguacate
 			</h3>
 		</nav>
-		<nav class="flex gap-[10px] justify-center">
+		<nav class="flex gap-[5px] justify-center">
 			<p class="hidden md:flex justify-center items-center h-[30px] w-[4em] rounded-full cursor-pointer hover:bg-slate-300 active:bg-slate-500">
 				Inicio
 			</p>
@@ -28,23 +30,93 @@
 			<p class="hidden md:flex justify-center items-center h-[30px] w-[4em] rounded-full cursor-pointer hover:bg-slate-300 active:bg-slate-500">
 				App
 			</p>
-			<img class="md:hidden flex w-[20px] h-[20px]" src="./Imagenes/bars-solid.svg" alt="">
+			<img class="md:hidden flex w-[20px] h-[20px]" src="./Imagenes/SVG/bars-solid.svg" alt="">
 		</nav>
 		<nav class="flex gap-[7px]">
-			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[6em] gap-[5px] text-[#ad465b] bg-[#ad465b7d] hover:outline-black hover:outline-[1.5px] hover:outline active:bg-[#622733] rounded-full">
-				<p class="hidden md:block">Carrito</p> 
-				<img class="Carrito w-[20px] h-[20px]" src="./Imagenes/cart-shopping-solid.svg" alt="">
+			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[5.2em] lg:w-[6em] gap-[5px] text-[#ad465b] bg-[#ad465b7d] hover:outline-black hover:outline-[2px] hover:outline active:bg-[#622733] rounded-full">
+				<p class="hidden relative md:block">
+					Carrito
+				</p> 
+				<img class="Carrito w-[20px] h-[20px]" src="./Imagenes/SVG/cart-shopping-solid.svg" alt="">
 			</button>
-			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[7em] gap-[5px] text-[#489848] bg-[#48984883] hover:outline-black hover:outline-[1.5px] hover:outline active:bg-[#244c24] rounded-full">
-				<p class="hidden md:block">Mensajes</p> 
-				<img class="Mensaje w-[20px] h-[20px]" src="./Imagenes/inbox-solid.svg" alt="">
+			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[6.2em] lg:w-[7em] gap-[5px] text-[#489848] bg-[#48984883] hover:outline-black hover:outline-[2px] hover:outline active:bg-[#244c24] rounded-full">
+				<p class="hidden relative md:block">
+					Mensajes
+				</p> 
+				<img class="Mensaje w-[20px] h-[20px]" src="./Imagenes/SVG/inbox-solid.svg" alt="">
 			</button>
-			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[9em] gap-[5px] rounded-full hover:outline-black hover:outline-[1.5px] hover:outline active:">
-				<p class="hidden md:block">Iniciar Sesión</p> 
-				<img class="Sesion w-[20px] h-[20px]" src="./Imagenes/arrow-right-to-bracket-solid.svg" alt="">
+			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[7.2em] lg:w-[9em] gap-[5px] rounded-full hover:outline-black hover:outline-[2px] hover:outline active:">
+				<p class="hidden relative md:block">
+					Iniciar Sesión
+				</p> 
+				<img class="Sesion w-[20px] h-[20px]" src="./Imagenes/SVG/arrow-right-to-bracket-solid.svg" alt="">
 			</button>
 		</nav>
 	</header>
+	<section class="px-[25px] md:px-[8%] lg:px-[10%] mt-[40px]">
+		<div class="flex flex-col h-[25em] bg-[url('./Imagenes/PNG/banner.png')] bg-cover justify-center pl-[25px] gap-[10px] md:gap-[20px] rounded-[35px]">
+			<hgroup class="w-[50%] md:w-[40%] flex flex-col gap-[10px] md:gap-[15px]">
+				<h3 class="font-bold text-2xl md:text-4xl">
+					Ordena tu pedido aquí
+				</h3>
+				<p class="text-[#2e5f2e] text-base md:text-lg font-bold italic">
+					#DeliveryGratuito
+				</p>
+			</hgroup>
+			<form class="relative z-10 flex h-[30px] md:h-[35px] lg:h-[45px] w-[50%] md:w-[40%] rounded-full bg-slate-100" action="submit">
+				<input class="w-[70%] md:w-[80%] indent-[15px] rounded-full border-0 bg-slate-100 outline-none placeholder-slate-400" placeholder="Busca tus suministros diarios..." type="text" name="Buscador" id="Barra#1">
+				<button class="absolute z-0 right-0 w-[30%] md:w-[20%] h-full justify-center items-center rounded-full bg-[#489848] text-white active:bg-[#2e5f2e]" type="button">
+					Buscar
+				</button>
+			</form>
+		</div>
+		<div class="flex flex-col gap-[10px] box-border h-[14em] md:h-[12em] md:h-[15em] mt-[40px] border-slate-300">
+			<h3 class="flex h-[50%] items-center font-bold text-2xl md:text-4xl">
+				Categorías
+			</h3>
+			<menu class="h-[50%] inset-x-0 grid [grid-template-columns:repeat(9,12%)] gap-[10px] text-[0.8em] overflow-x-auto">
+				<li class="flex flex-col gap-[5px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="relative md:top-[10px] h-[35%] w-[35%]" src="./Imagenes/PNG/carne.png" alt="">
+					<p class="relative md:top-[10px] leading-none">
+						Carnes y <br> 
+						Pescados
+					</p>	
+				</li>
+				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="h-[35%] w-[35%]" src="./Imagenes/PNG/vegetal.png" alt="vegetal">
+					<p>Vegetales</p>
+				</li>
+				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="h-[35%] w-[35%]" src="./Imagenes/PNG/medicina.png" alt="medicina">
+					<p>Medicinas</p>
+				</li>
+				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="h-[35%] w-[35%]" src="./Imagenes/PNG/chupete.png" alt="chupete">
+					<p>Bebes</p>
+				</li>
+				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="h-[35%] w-[35%]" src="./Imagenes/PNG/escritorio.png" alt="escritorio">
+					<p>Oficina</p>
+				</li>
+				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="h-[35%] w-[35%]" src="./Imagenes/PNG/productos-cosmeticos.png" alt="cosmeticos">
+					<p>Belleza</p>
+				</li>
+				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="h-[35%] w-[35%]" src="./Imagenes/PNG/regadera.png" alt="regadera">
+					<p>Jardín</p>
+				</li>
+				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="h-[35%] w-[35%]" src="./Imagenes/PNG/herramientas.png" alt="herramientas">
+					<p>Herramientas</p>
+				</li>
+				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
+					<img class="h-[35%] w-[35%]" src="./Imagenes/PNG/lapiz.png" alt="lapiz">
+					<p>Útiles</p>
+				</li>
+			</menu>
+		</div>
+	</section>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
