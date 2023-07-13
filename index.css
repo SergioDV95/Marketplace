@@ -1,22 +1,22 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box!important;
 }
 
 @media only screen and (max-width: 640px) {
     * {
-        font-size: 0.85em;
+        font-size: 0.95em;
     }
 }
 
 @media only screen and (min-width: 640px) {
     * {
-        font-size: 0.90em;
+        font-size: 1em;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     * {
-        font-size: 1.05em;
+        font-size: 1em;
     }
 }
     

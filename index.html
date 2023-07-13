@@ -4,17 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Aguacate.com.ve</title>
 </head>
-<body class="text-[16px] bg-white w-screen bg-[url('./Imagenes/PNG/background-1.png')] bg-cover">
-	<header class="flex w-full h-[50px] justify-between items-center box-border px-[50px] md:px-[8%] lg:px-[10%] pt-[25px]">
+<body class="text-[16px] 2xl:text-[24px] text-base bg-white bg-cover">
+	<header class="fixed top-0 z-10 flex h-[50px] bg-white w-full box-border justify-between gap-[5px] items-center box-border px-[50px] py-[30px] md:px-[100px] lg:px-[100px]">
 		<nav class="flex gap-[5px]">
-			<img class="w-[28px] h-[28px]" src="./Imagenes/JPG/m3h0_xmlf_221123.jpg" alt="">
+			<img class="w-[28px] h-[28px]" src="./Imagenes/PNG/Aguacate_logo.png" alt="">
 			<h3 class="font-bold text-xl">
-				eAguacate
+				Aguacate
 			</h3>
 		</nav>
 		<nav class="flex gap-[5px] justify-center">
@@ -32,29 +36,30 @@
 			</p>
 			<img class="md:hidden flex w-[20px] h-[20px]" src="./Imagenes/SVG/bars-solid.svg" alt="">
 		</nav>
-		<nav class="flex gap-[7px]">
-			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[5.2em] lg:w-[6em] gap-[5px] text-[#ad465b] bg-[#ad465b7d] hover:outline-black hover:outline-[2px] hover:outline active:bg-[#622733] rounded-full">
-				<p class="hidden relative md:block">
+		<nav class="flex max-[352px]:gap-[3px] max-md:gap-[15px] md:gap-[5px]">
+			<button class="flex gap-[5px] items-center justify-center w-[40px] md:w-[5em] h-[30px] bg-[#ff000081] text-[#8f0000] hover:outline-black hover:outline-[2px] hover:outline active:bg-[#622733] rounded-full">
+				<p class="hidden relative md:block text-[0.8em]">
 					Carrito
 				</p> 
-				<img class="Carrito w-[20px] h-[20px]" src="./Imagenes/SVG/cart-shopping-solid.svg" alt="">
+				<img class="Carrito w-[20px] h-[20px] " src="./Imagenes/SVG/cart-shopping-solid.svg" alt="">
 			</button>
-			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[6.2em] lg:w-[7em] gap-[5px] text-[#489848] bg-[#48984883] hover:outline-black hover:outline-[2px] hover:outline active:bg-[#244c24] rounded-full">
-				<p class="hidden relative md:block">
+			<button class="flex gap-[5px] items-center justify-center w-[40px] md:w-[6em] h-[30px] bg-[#00e40079] text-[#018d01] hover:outline-black hover:outline-[2px] hover:outline active:bg-[#244c24] rounded-full">
+				<p class="hidden relative md:block text-[0.8em]">
 					Mensajes
 				</p> 
 				<img class="Mensaje w-[20px] h-[20px]" src="./Imagenes/SVG/inbox-solid.svg" alt="">
 			</button>
-			<button class="flex justify-center items-center h-[30px] w-[3em] md:w-[7.2em] lg:w-[9em] gap-[5px] rounded-full hover:outline-black hover:outline-[2px] hover:outline active:">
-				<p class="hidden relative md:block">
+			<button class="flex gap-[5px] items-center justify-center w-[40px] md:w-[8em] h-[30px] rounded-full hover:outline-black hover:outline-[2px] hover:outline active:">
+				<p class="hidden relative md:block text-[0.8em]">
 					Iniciar Sesión
 				</p> 
 				<img class="Sesion w-[20px] h-[20px]" src="./Imagenes/SVG/arrow-right-to-bracket-solid.svg" alt="">
 			</button>
 		</nav>
 	</header>
-	<section class="px-[5%] md:px-[6%] lg:px-[8%] mt-[40px]">
-		<div class="flex flex-col h-[25em] bg-[url('./Imagenes/PNG/banner.png')] bg-cover justify-center pl-[35px] gap-[10px] md:gap-[20px] rounded-[35px]">
+	<section class="static z-0 px-[5%] md:px-[6%] lg:px-[8%] lg:py-[5%] mt-[60px]">
+		<div class="flex flex-col h-[25em] bg-[url('./Imagenes/PNG/banner.png')] bg-cover justify-center pl-[35px] gap-[10px] md:gap-[20px] rounded-[35px]" 
+		data-aos="fade-up">
 			<hgroup class="w-[50%] md:w-[40%] flex flex-col gap-[10px] md:gap-[15px]">
 				<h3 class="font-bold text-2xl md:text-4xl">
 					Ordena tu pedido aquí
@@ -63,109 +68,332 @@
 					#DeliveryGratuito
 				</p>
 			</hgroup>
-			<form class="relative z-10 flex h-[30px] md:h-[35px] lg:h-[45px] w-[50%] md:w-[40%] rounded-full bg-slate-100" action="submit">
+			<form class="relative z-10 flex h-[30px] md:h-[35px] lg:h-[45px] w-[50%] md:w-[40%] rounded-full bg-slate-100" 
+			action="submit"
+			data-aos="zoom-out"
+			data-aos-delay="500">
 				<input class="w-[70%] md:w-[80%] indent-[15px] rounded-full border-0 bg-slate-100 outline-none placeholder-slate-400" placeholder="Busca tus suministros diarios..." type="text" name="Buscador" id="Barra#1">
-				<button class="absolute z-0 right-0 w-[30%] md:w-[20%] h-full justify-center items-center rounded-full bg-[#489848] text-white active:bg-[#2e5f2e]" type="button">
+				<button class="absolute z-0 right-0 w-[30%] md:w-[20%] h-full justify-center items-center rounded-full bg-[#489848] text-white active:bg-[#2e5f2e]" 
+				type="button">
 					Buscar
 				</button>
 			</form>
 		</div>
-		<div class="flex flex-col gap-[10px] px-[35px] box-border h-[14em] md:h-[12em] md:h-[15em] mt-[40px] border-slate-300">
-			<h3 class="flex h-[50%] items-center font-bold text-2xl md:text-4xl">
+		<div class="flex flex-col gap-[30px] p-[35px] box-border md:mt-[40px] border-slate-300"
+		data-aos="zoom-out-down">
+			<h3 class="flex h-fit items-center font-bold text-2xl md:text-4xl">
 				Categorías
 			</h3>
-			<menu class="h-[50%] grid [grid-template-columns:repeat(9,12%)] gap-[10px] text-[0.8em] overflow-x-auto">
-				<li class="flex flex-col gap-[5px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="relative md:top-[10px] h-[45%] w-[45%]" src="./Imagenes/PNG/carne.png" alt="">
-					<p class="relative md:top-[10px] leading-none">
+			<menu class="grid [grid-template-columns:repeat(9,20%)] sm:[grid-template-columns:repeat(7,13%)] gap-[10px] text-[0.8em] overflow-x-auto overflow-y-hidden">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="150">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/carne.png" alt="">
+					<p class="relative [bottom:3px] leading-none">
 						Carnes y <br> 
 						Pescados
 					</p>	
 				</li>
-				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="h-[45%] w-[45%]" src="./Imagenes/PNG/vegetal.png" alt="vegetal">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="250">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/vegetal.png" alt="vegetal">
 					<p>Vegetales</p>
 				</li>
-				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="h-[45%] w-[45%]" src="./Imagenes/PNG/medicina.png" alt="medicina">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="350">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/medicina.png" alt="medicina">
 					<p>Medicinas</p>
 				</li>
-				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="h-[45%] w-[45%]" src="./Imagenes/PNG/chupete.png" alt="chupete">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="450">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/chupete.png" alt="chupete">
 					<p>Bebes</p>
 				</li>
-				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="h-[45%] w-[45%]" src="./Imagenes/PNG/escritorio.png" alt="escritorio">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="550">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/escritorio.png" alt="escritorio">
 					<p>Oficina</p>
 				</li>
-				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="h-[45%] w-[45%]" src="./Imagenes/PNG/productos-cosmeticos.png" alt="cosmeticos">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="650">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/productos-cosmeticos.png" alt="cosmeticos">
 					<p>Belleza</p>
 				</li>
-				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="h-[45%] w-[45%]" src="./Imagenes/PNG/regadera.png" alt="regadera">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="750">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/regadera.png" alt="regadera">
 					<p>Jardín</p>
 				</li>
-				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="h-[45%] w-[45%]" src="./Imagenes/PNG/herramientas.png" alt="herramientas">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="150">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/herramientas.png" alt="herramientas">
 					<p>Herramientas</p>
 				</li>
-				<li class="flex flex-col gap-[10px] justify-center items-center bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img class="h-[45%] w-[45%]" src="./Imagenes/PNG/lapiz.png" alt="lapiz">
+				<li class="flex flex-col justify-around items-center bg-slate-200 rounded-[1.5em] shadow-inner"
+				data-aos="zoom-in-up"
+				data-aos-delay="250">
+					<img class="md:h-3/5 md:w-3/5 p-[20%] md:p-[5%]" src="./Imagenes/PNG/lapiz.png" alt="lapiz">
 					<p>Útiles</p>
 				</li>
 			</menu>
 		</div>
-		<div class="flex flex-col gap-[10px] px-[35px] box-border h-[14em] md:h-[12em] md:h-[15em] mt-[40px] border-slate-300">
-			<h3 class="flex items-center font-bold text-2xl md:text-4xl">
-				Productos Populares
+		<div class="flex flex-col gap-[30px] p-[35px] box-border rounded-[30px] max-h-fit md:mt-[40px]">
+			<h3 class="flex items-center font-bold text-2xl md:text-4xl">	
+				Destacados
 			</h3>
-			<menu class="grid grid-cols-3 gap-[10px] text-[0.8em]">
-				<li class="flex flex-col gap-[5px] bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img src="" alt="">
-					<hgroup>
-						<h4></h4>
-						<p></p>
+			<menu class="flex overflow-x-auto md:overflow-hidden sm:grid sm:grid-cols-3 gap-[30px] text-[0.8em]">
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white border-[1px] border-solid border-slate-100"
+				data-aos="zoom-out-up"
+				data-aos-delay="150">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Cereal(Great_grains)-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							CEREAL GREAT GRAINS CRUNCHY PECAN POST
+						</h3>
+						<span class="text-[gray] font-normal">453 GR</span>
+						<p class="leading-tight font-normal">
+							Ref. 7,95 <br>
+							I.V.A.  Ref. 1,27 <br>
+							Total Ref. 9,22
+						</p>
 					</hgroup>
 				</li>
-				<li class="flex flex-col gap-[5px] bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img src="" alt="">
-					<hgroup>
-						<h4></h4>
-						<p></p>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white border-[1px] border-solid border-slate-100"
+				data-aos="zoom-out-up"
+				data-aos-delay="250">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Gelato_Talenti-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							HELADO LAYERS SALTED CARAMEL TRUFFLE TALENTI
+						</h3>
+						<span class="text-[gray] font-normal">473 ML</span>
+						<p class="leading-tight font-normal">
+							Ref. 7,36<br>
+							I.V.A.  Ref. 1,18<br>
+							Total Ref. 8,54
+						</p>
 					</hgroup>
 				</li>
-				<li class="flex flex-col gap-[5px] bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img src="" alt="">
-					<hgroup>
-						<h4></h4>
-						<p></p>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white border-[1px] border-solid border-slate-100"
+				data-aos="zoom-out-up"
+				data-aos-delay="350">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Bufalinda_Yogurt-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							YOGURT EL GRIEGO DE FRESA BUFALINDA
+						</h3>
+						<span class="text-[gray] font-normal">500 GR</span>
+						<p class="leading-tight font-normal">
+							Ref. 4,98 <br>
+							I.V.A.  Ref. 0,80 <br>
+							Total Ref. 5,78
+						</p>
 					</hgroup>
 				</li>
-				<li class="flex flex-col gap-[5px] bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img src="" alt="">
-					<hgroup>
-						<h4></h4>
-						<p></p>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white border-[1px] border-solid border-slate-100"
+				data-aos="zoom-out-up"
+				data-aos-delay="150">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Montserratina_Chorizo-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							CHORIZO COCIDO CON AJO LA 
+							<span class="max-[426px]:hidden min-[426px]:inline">
+								MONTSERRATINA
+							</span> 
+							<span class="max-[426px]:inline min-[426px]:hidden">
+								MONT-<br>
+								SERRATINA
+							</span>
+						</h3>
+						<span class="text-[gray] font-normal">400 GR</span>
+						<p class="leading-tight font-normal">
+							Ref. 4,57 <br>
+							I.V.A.  Ref. 0,73 <br>	
+							Total Ref. 5,30
+						</p>
 					</hgroup>
 				</li>
-				<li class="flex flex-col gap-[5px] bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img src="" alt="">
-					<hgroup>
-						<h4></h4>
-						<p></p>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white border-[1px] border-solid border-slate-100"
+				data-aos="zoom-out-up"
+				data-aos-delay="250">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Santa_Carolina_Coupage-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							VINO BLANCO SANTA CAROLINA COUPAGE
+						</h3>
+						<span class="text-[gray] font-normal">0,75 LT</span>
+						<p class="leading-tight font-normal">
+							Total Ref. 10,03
+						</p>
 					</hgroup>
 				</li>
-				<li class="flex flex-col gap-[5px] bg-slate-200 rounded-[1.5em] h-[100%]">
-					<img src="" alt="">
-					<hgroup>
-						<h4></h4>
-						<p></p>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white border-[1px] border-solid border-slate-100"
+				data-aos="zoom-out-up"
+				data-aos-delay="350">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Movilla_tocineta-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							TOCINETA REBANADA MOVILLA
+						</h3>
+						<span class="text-[gray] font-normal">250 GR</span>
+						<p class="leading-tight font-normal">
+							Ref. 6,37 <br>
+							I.V.A.  Ref. 1,02 <br>
+							Total Ref. 7,39
+						</p>
 					</hgroup>
 				</li>
-			</menu>"
+			</menu>
+		</div>
+		<div class="flex flex-col gap-[30px] p-[35px] box-border rounded-[30px] [background-color:rgb(213,240,219)] max-h-fit md:mt-[40px]"
+		data-aos="fade-right">
+			<h3 class="flex items-center font-bold text-2xl md:text-4xl">	
+				Lo más vendido
+			</h3>
+			<menu class="flex overflow-x-auto md:overflow-hidden sm:grid sm:grid-cols-3 gap-[30px] text-[0.8em]">
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white shadow-inner"
+				data-aos="fade-left"
+				data-aos-delay="300">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Cebollas-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							CEBOLLA EN BANDEJA
+						</h3>
+						<span class="text-[gray] font-normal">1 KG</span>
+						<p class="leading-tight font-normal">
+							Total Ref. 1,39
+						</p>
+					</hgroup>
+				</li>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white shadow-inner"
+				data-aos="fade-left"
+				data-aos-delay="400">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Huevos-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							HUEVOS
+						</h3>
+						<span class="text-[gray] font-normal">30 UN</span>
+						<p class="leading-tight font-normal">
+							Total Ref. 3,75
+						</p>
+					</hgroup>
+				</li>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white shadow-inner"
+				data-aos="fade-left"
+				data-aos-delay="500">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Bistec-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							CARNE BISTEC CHOCOZUELA
+						</h3>
+						<span class="text-[gray] font-normal">500 GR</span>
+						<p class="leading-tight font-normal">
+							Total Ref. 3,75
+						</p>
+					</hgroup>
+				</li>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white shadow-inner"
+				data-aos="fade-left"
+				data-aos-delay="300">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Azucar-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							AZUCAR REFINADA MONTALBAN BOLSA DE PLASTICO 
+						</h3>
+						<span class="text-[gray] font-normal">1 KG</span>
+						<p class="leading-tight font-normal">
+							Total Ref. 1,35
+						</p>
+					</hgroup>
+				</li>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white shadow-inner"
+				data-aos="fade-left"
+				data-aos-delay="400">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Aguacate-PhotoRoom.png-PhotoRoom.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							AGUACATE
+						</h3>
+						<span class="text-[gray] font-normal">1,2 KG</span>
+						<p class="leading-tight font-normal">
+							Total Ref. 1,19
+						</p>
+					</hgroup>
+				</li>
+				<li class="flex flex-col p-[15px] gap-[5px] rounded-[1.5em] bg-white shadow-inner"
+				data-aos="fade-left"
+				data-aos-delay="500">
+					<img class="max-w-[100px] max-h-[100px] sm:max-w-fit sm:max-h-fit" src="./Imagenes/PNG/Chuleta.png" alt="">
+					<hgroup class="flex flex-col md:gap-[10px] justify-between items-start">
+						<h3 class="font-normal leading-tight">
+							CHULETAS AHUMADAS PLUMROSE
+						</h3>
+						<span class="text-[gray] font-normal">400 GR</span>
+						<p class="leading-tight font-normal">
+							Ref. 3,44 <br>
+							I.V.A.  Ref. 0,55 <br>
+							Total Ref. 3,99
+						</p>
+					</hgroup>
+				</li>
+			</menu>
+		</div>
+		<div class="hidden md:flex relative gap-[30px] p-[35px] box-border rounded-[30px] [background-color:rgb(213,240,219)] md:h-[15em] lg:h-[300px] md:mt-[12em]"
+		data-aos="fade-left"
+		data-aos-delay="300">
+			<img class="flex flex-col absolute [left:10%] [top:-40%] border-[1px] border-solid border-black rounded-[20px] h-[180%]" 
+			src="./Imagenes/PNG/App.png" 
+			alt=""
+			data-aos="fade-up"
+			data-aos-delay="700">
+			<hgroup class="flex flex-col absolute w-[50%] top-25 right-10 gap-[15px]">
+				<h3 class="flex items-center font-bold text-2xl md:text-4xl">
+					Descarga la App
+				</h3>
+				<p class="flex leading-tight">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis eaque sit quod exercitationem aliquam dicta ea rem, in ipsa facere modi quis dolore mollitia voluptatem sunt nemo? Pariatur, ullam quas!
+				</p>
+				<figure class="md:h-[150px] lg:h-[200px] flex absolute md:[bottom:-115px] lg:[bottom:-155px]">
+					<img class="" src="./Imagenes/PNG/Google_Play.png" alt=""
+					data-aos="flip-right"
+					data-aos-delay="1000">
+					<img class="" src="./Imagenes/PNG/App_Store.png" alt=""
+					data-aos="flip-left"
+					data-aos-delay="1150">
+				</figure>
+			</hgroup>
 		</div>
 	</section>
+	<footer class="bg-[#2b2b2b] w-full md:h-[200px] mt-[50px] md:mt-[150px] text-white flex flex-col px-[50px] py-[30px] md:px-[100px] lg:px-[100px] justify-center items-center gap-[20px]">
+		<div class="flex gap-[5px]">
+			<img class="w-[28px] h-[28px]" src="./Imagenes/PNG/Aguacate_logo.png" alt="">
+			<h3 class="font-bold text-xl">
+				Aguacate
+			</h3>
+		</div>
+		<div class="flex gap-[10px]">
+			<a href="https://www.facebook.com/" target="_blank">
+				<img class="w-[40px] h-[40px] rounded-full hover:cursor-pointer" src="./Imagenes/PNG/facebook.png" alt="Facebook">
+			</a>
+			<a href="https://www.instagram.com/" target="_blank">
+				<img class="w-[40px] h-[40px] rounded-full hover:cursor-pointer" src="./Imagenes/PNG/instagram.png" alt="Instagram">
+			</a>
+			<a href="https://web.whatsapp.com/" target="_blank">
+				<img class="w-[40px] h-[40px] rounded-full hover:cursor-pointer" src="./Imagenes/PNG/whatsapp.png" alt="Whatsapp">
+			</a>
+			<a href="https://twitter.com/" target="_blank">
+				<img class="w-[40px] h-[40px] rounded-full hover:cursor-pointer" src="./Imagenes/PNG//Twitter.png" alt="Twitter">
+			</a>
+		</div>
+	</footer>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
